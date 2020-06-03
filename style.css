@@ -5,16 +5,16 @@
 
 #text {
 	display: inline-block;
-    color: #FFDF00;
+    color: #342222;
     font-size: 40px;
     font-weight: 800;
 }
 
-/* #section1 {
-    background-image:url("./images/myimage.jpg");
+#section1 {
+    background-image: url("./images/back1.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-} */
+    background-size: cover;
+}
 
 .section {
     width: 100%;
