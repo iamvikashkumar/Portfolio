@@ -1,0 +1,26 @@
+.section {
+    width: 100%;
+    overflow:auo;
+    }
+    
+    .fleft {
+        float:left; 
+        width: 60%;
+    }
+    
+    .fright {
+        float: right;
+        width: 40%;
+    }
+    
+  .text_title {
+      font-size: 50px;
+      font-weight: bold;
+      color: #566573;
+  }
+
+  .description {
+    font-size: 20px;
+    font-weight: bold;
+    color: #212F3C;
+  }
