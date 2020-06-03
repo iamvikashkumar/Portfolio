@@ -1,6 +1,6 @@
 <html>
     <!-- <head>Page Pilling</head> -->
-    <title>Example of Page Pilling</title>
+    <title>Vikash Kumar</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
     <link rel="stylesheet" type="text/css" href="https://alvarotrigo.com/pagePiling/jquery.pagepiling.css">
@@ -31,9 +31,9 @@
                         <div class="text_title">Vikash Kumar</div>
                         <div class="description">Enjoy a lot more opportunities compared to a developer specializing in one stack. A passionate individual who always thrive to work on end to end products.</div>
                     </div>
-                  </div>
-                  <div class="fright">
-                      <img src="./images/pic1.jpg" alt="Avatar man">
+                </div>
+                <div class="fright">
+                      <img src="./images/pic1.png" alt="Avatar man" style="width: 100%; border-radius: 50%;">
                       <h2>John Doe</h2>
                       <p>Some text here too.</p>
                 </div>            
@@ -45,71 +45,23 @@
               <h1 class="h2">Hello World 4</h1>
             </div>
             <div class="section" id="section5">
-              <h1 class="h2">Hello World 5</h1>
+              
+
+
+
+            <div class="left_map">
+              <div id="map" style="height: 100%; width: 100%;">
+                <iframe style="height: 100%; width: 100%;" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.61687901417!2d78.53342914725495!3d17.478041996763316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI4JzQxLjAiTiA3OMKwMzInMDQuNCJF!5e0!3m2!1sen!2sin!4v1591192777402!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </div>
+            <div class="right_detail">
+            </div>
             </div>
         </div>
     </body>
 
-
-<script type="text/javascript">
-
-  // List of sentences
-  var _CONTENT = [ "Hey, I am Vikash Kumar.", "I am a Front End Developer.", "I am a Back End Developer.", "Having Knowledge about AWS.", "Actually, I am Full Stack Developer." ];
-  
-  // Current sentence being processed
-  var _PART = 0;
-  
-  // Character number of the current sentence being processed 
-  var _PART_INDEX = 0;
-  
-  // Holds the handle returned from setInterval
-  var _INTERVAL_VAL;
-  
-  // Element that holds the text
-  var _ELEMENT = document.querySelector("#text");
-  
-  // Implements typing effect
-  function Type() { 
-    var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
-    _ELEMENT.innerHTML = text;
-    _PART_INDEX++;
-  
-    // If full sentence has been displayed then start to delete the sentence after some time
-    if(text === _CONTENT[_PART]) {
-      clearInterval(_INTERVAL_VAL);
-      setTimeout(function() {
-        _INTERVAL_VAL = setInterval(Delete, 50);
-      }, 1000);
-    }
-  }
-  
-  // Implements deleting effect
-  function Delete() {
-    var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
-    _ELEMENT.innerHTML = text;
-    _PART_INDEX--;
-  
-    // If sentence has been deleted then start to display the next sentence
-    if(text === '') {
-      clearInterval(_INTERVAL_VAL);
-  
-      // If last sentence then display the first one, else move to the next
-      if(_PART == (_CONTENT.length - 1))
-        _PART = 0;
-      else
-        _PART++;
-      _PART_INDEX = 0;
-  
-      // Start to display the next sentence after some time
-      setTimeout(function() {
-        _INTERVAL_VAL = setInterval(Type, 100);
-      }, 200);
-    }
-  }
-  
-  // Start the typing effect on load
-  _INTERVAL_VAL = setInterval(Type, 100);
-  
-  </script>
+<!-- <script type="text/javascript" src="./script/map.js"></script> -->
+<script type="text/javascript" src="./script/section1.js"></script>
   
 </html>

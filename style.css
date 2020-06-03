@@ -33,6 +33,21 @@
         height: 100%;
     }
 
+    .left_map {
+        float:left; 
+        width: 65%;
+        height: 100%;
+    }
+
+    .right_detail {
+        float: right;
+        background-image: url("./images/contact1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 35%;
+        height: 100%;
+    }
+
     .border {
         margin: 20px;
     }
