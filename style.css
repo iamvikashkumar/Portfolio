@@ -35,7 +35,7 @@
 
     .left_map {
         float:left; 
-        width: 65%;
+        width: 55%;
         height: 100%;
     }
 
@@ -44,7 +44,7 @@
         background-image: url("./images/contact1.png");
         background-repeat: no-repeat;
         background-size: cover;
-        width: 35%;
+        width: 45%;
         height: 100%;
     }
 
