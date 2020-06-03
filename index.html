@@ -19,7 +19,13 @@
 
     <body>
         <div id="pagepiling">
-            <div class="section" id="section1">
+
+          <div class="section" id="section1">
+            <div id="container">
+              <div id="text"></div>
+            </div>
+          </div>
+            <div class="section" id="section2">
                 <div class="fleft">
                     <div class="border">
                         <div class="text_title">Vikash Kumar</div>
@@ -27,13 +33,10 @@
                     </div>
                   </div>
                   <div class="fright">
-                      <img src="./images/1b.png" alt="Avatar man">
+                      <img src="./images/pic1.jpg" alt="Avatar man">
                       <h2>John Doe</h2>
                       <p>Some text here too.</p>
                 </div>            
-            </div>
-            <div class="section" id="section2">
-              <h1 class="h2">Hello World 2</h1>
             </div>
             <div class="section" id="section3">
               <h1 class="h2">Hello World 3</h1>
@@ -46,4 +49,67 @@
             </div>
         </div>
     </body>
+
+
+<script type="text/javascript">
+
+  // List of sentences
+  var _CONTENT = [ "Hey, I am Vikash Kumar.", "I am a Front End Developer.", "I am a Back End Developer.", "Having Knowledge about AWS.", "Actually, I am Full Stack Developer." ];
+  
+  // Current sentence being processed
+  var _PART = 0;
+  
+  // Character number of the current sentence being processed 
+  var _PART_INDEX = 0;
+  
+  // Holds the handle returned from setInterval
+  var _INTERVAL_VAL;
+  
+  // Element that holds the text
+  var _ELEMENT = document.querySelector("#text");
+  
+  // Implements typing effect
+  function Type() { 
+    var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+    _ELEMENT.innerHTML = text;
+    _PART_INDEX++;
+  
+    // If full sentence has been displayed then start to delete the sentence after some time
+    if(text === _CONTENT[_PART]) {
+      clearInterval(_INTERVAL_VAL);
+      setTimeout(function() {
+        _INTERVAL_VAL = setInterval(Delete, 50);
+      }, 1000);
+    }
+  }
+  
+  // Implements deleting effect
+  function Delete() {
+    var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+    _ELEMENT.innerHTML = text;
+    _PART_INDEX--;
+  
+    // If sentence has been deleted then start to display the next sentence
+    if(text === '') {
+      clearInterval(_INTERVAL_VAL);
+  
+      // If last sentence then display the first one, else move to the next
+      if(_PART == (_CONTENT.length - 1))
+        _PART = 0;
+      else
+        _PART++;
+      _PART_INDEX = 0;
+  
+      // Start to display the next sentence after some time
+      setTimeout(function() {
+        _INTERVAL_VAL = setInterval(Type, 100);
+      }, 200);
+    }
+  }
+  
+  // Start the typing effect on load
+  _INTERVAL_VAL = setInterval(Type, 100);
+  
+  </script>
+  
 </html>

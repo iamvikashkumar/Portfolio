@@ -1,3 +1,21 @@
+#container {
+	margin: 50px 0 0 0;
+	text-align: center;
+}
+
+#text {
+	display: inline-block;
+    color: #FFDF00;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+/* #section1 {
+    background-image:url("./images/myimage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} */
+
 .section {
     width: 100%;
     overflow:auo;
@@ -5,22 +23,32 @@
     
     .fleft {
         float:left; 
-        width: 60%;
+        width: 50%;
+        height: 100%;
     }
     
     .fright {
         float: right;
-        width: 40%;
+        width: 50%;
+        height: 100%;
     }
-    
-  .text_title {
+
+    .border {
+        margin: 20px;
+    }
+
+    .text_title {
       font-size: 50px;
       font-weight: bold;
       color: #566573;
-  }
+      margin-bottom: 10px;
+    }
 
-  .description {
+    .description {
     font-size: 20px;
     font-weight: bold;
     color: #212F3C;
-  }
+    }
+
+
+    
