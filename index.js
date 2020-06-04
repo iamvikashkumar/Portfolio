@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('#pagepiling').pagepiling({
       menu: '#menu',
       anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-      sectionsColor: ['black', 'white', '#2C3E50', '#39C', '#C1CBE1'],
+      sectionsColor: ['black', 'white', 'white', '#39C', '#C1CBE1'],
       navigation: {
         'position': 'right',
         'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5']
@@ -23,5 +23,15 @@ $(document).ready(function() {
       }
     });
   
+  });
+
+
+
+  jQuery(document).ready(function(){
+    jQuery('.skillbar').each(function(){
+      jQuery(this).find('.skillbar-bar').animate({
+        width:jQuery(this).attr('data-percent')
+      },6000);
+    });
   });
   
