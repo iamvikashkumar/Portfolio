@@ -1,5 +1,5 @@
 #container {
-	margin: 50px 0 0 0;
+	/* margin: 50px 0 0 0; */
 	text-align: center;
 }
 
@@ -16,11 +16,73 @@
     background-size: cover;
 }
 
+#section4 {
+    background-image: url("./images/img3.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.myheader {
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.mydata {
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .section {
+    height: 100%;
     width: 100%;
     overflow:auo;
     }
-    
+
+    .nav_left {
+        float:left; 
+        width: 15%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #c99914;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .nav_center {
+        float: center; 
+        width: 70%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .nav_right {
+        float: right; 
+        width: 15%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 100px;
+    }
+
     .fleft {
         float:left; 
         width: 50%;
@@ -87,6 +149,11 @@
 
     .border {
         margin: 20px;
+    }
+
+    #section1 img {
+        margin: 0px;
+        /* opacity: 0.7; */
     }
 
     .question {
@@ -191,4 +258,136 @@
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
 }
+
+/* .top_line {
+    width: 100%;
+    height: 100%;
+    color: #342222;
+    font-size: 26px;
+    font-weight: bold; 
+}
+
+.text {
+    margin: 50px;
+    padding-top: 50px;
+    text-align: start;
+} */
+
+
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    height: 100%;
+    width: 110px;
+    font-weight: bold;
+    transition: all 0.5s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 16px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
     
+
+
+
+
+
+
+
+
+
+
+
+/* side bar css */
+#sidenav-toggle img {
+    background-color: #000000;
+  }
+  #sidenav-toggle img:hover {
+      background-color: #00A7E8;
+  }
+  #sidenav-toggle img {
+      -webkit-transition: background-color 0.25s ease-in-out;
+      transition: background-color 0.25s ease-in-out;
+      padding: 10px 8px;
+      padding: 1rem 0.8rem;
+  }
+  #sidenav-toggle {
+      position: absolute;
+      border: none;
+      background: transparent;
+      font-size: 16px;
+      font-family: 'nimbus-sans-condensed', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+  }
+  .ct-sidenav.open {
+      right: 0;
+  }
+  .ct-sidenav {
+     width: 40%;
+      height: 100%;
+      position: fixed;
+      z-index: 9990;
+      top: 0;
+      right: -40%;
+      opacity: 0.5;
+      background: #000000;
+      /* padding: 75px 0 20px;
+      padding: 7.5rem 0 2rem; */
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-transition: right 0.25s ease-in-out;
+      transition: right 0.25s ease-in-out;
+      color: #b7b6b6;
+  }
+  .ct-sidenav .close {
+      position: absolute;
+      top: 7px;
+      top: 0.7rem;
+      right: 15px;
+      right: 1.5rem;
+      text-shadow: none;
+      color: #fff;
+      -webkit-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
+      font-size: 80px;
+      font-size: 8rem;
+      opacity: 1;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      font-weight: lighter;
+  }
+  .ct-sidenav .inner {
+      padding-left: 65px;
+      padding-left: 6.5rem;
+  }
+ 

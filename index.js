@@ -5,11 +5,11 @@ $(document).ready(function() {
      */
     $('#pagepiling').pagepiling({
       menu: '#menu',
-      anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-      sectionsColor: ['black', 'white', 'white', '#39C', '#C1CBE1'],
+      anchors: ['page1', 'page2', 'page3', 'page4'],
+      sectionsColor: ['black', 'white', 'white', '#39C'],
       navigation: {
         'position': 'right',
-        'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5']
+        'tooltips': ['Home', 'Who is this guy?', 'Skills', 'Contact']
       },
       afterRender: function() {
         $('#pp-nav').addClass('custom');
