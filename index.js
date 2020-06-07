@@ -5,7 +5,7 @@ $(document).ready(function() {
      */
     $('#pagepiling').pagepiling({
       menu: '#menu',
-      anchors: ['page1', 'page2', 'page3', 'page4'],
+      anchors: ['Home', 'Who_is_this_guy?', 'Skills', 'Contact'],
       sectionsColor: ['black', 'white', 'white', '#39C'],
       navigation: {
         'position': 'right',

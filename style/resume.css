@@ -1,0 +1,92 @@
+#resume {
+    background-image: url("../images/resume.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.resume_container {
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resume_name {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+
+.resume_line {
+    margin-top: 10px;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.resume_details {
+    margin-top: 24px;
+    display: inline-flex;
+}
+
+/* button effect */
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  margin: 10px;
+  height: 50px;
+  width: 180px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: transparent;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #c99914;
+}
+/* BUTTON 4 */
+.resume_option::before {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.resume_option::after {
+  background: transparent;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.resume_option:hover:after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+/* End of button effect */

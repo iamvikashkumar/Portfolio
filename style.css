@@ -185,7 +185,7 @@
         color: #545955;
     }
 
-
+/* Skill bar css */
 .skillbar {
 	position:relative;
 	display:block;
@@ -258,74 +258,57 @@
 	color:#ffffff;
 	color:rgba(0, 0, 0, 0.4);
 }
+/* end of skill bar css */
 
-/* .top_line {
-    width: 100%;
-    height: 100%;
-    color: #342222;
-    font-size: 26px;
-    font-weight: bold; 
+/* Menu bar button for center one */
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 0px 10px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
 }
 
-.text {
-    margin: 50px;
-    padding-top: 50px;
-    text-align: start;
-} */
-
-
-
-.button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: black;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 16px;
-    height: 100%;
-    width: 110px;
-    font-weight: bold;
-    transition: all 0.5s;
-    cursor: pointer;
+nav a:hover,
+nav a:focus {
     outline: none;
-  }
-  
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover span {
-    padding-right: 16px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-    
+    color: white;
+}
 
+/* Effect 5: same word slide in */
+.menu a {
+	overflow: hidden;
+}
 
+.menu a span {
+	position: relative;
+	display: inline-block;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
 
+.menu a span::before {
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+	font-weight: 700;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
 
-
-
-
-
-
-
+.menu a:hover span,
+.menu a:focus span {
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+/* End of Menu bar button for center one */
 
 /* side bar css */
 #sidenav-toggle img {
@@ -360,8 +343,8 @@
       z-index: 9990;
       top: 0;
       right: -40%;
-      opacity: 0.5;
-      background: #000000;
+      /* opacity: 0.5; */
+      background: #737373;
       /* padding: 75px 0 20px;
       padding: 7.5rem 0 2rem; */
       overflow-x: hidden;
@@ -372,22 +355,20 @@
   }
   .ct-sidenav .close {
       position: absolute;
-      top: 7px;
-      top: 0.7rem;
+      /* top: 4px; */
       right: 15px;
-      right: 1.5rem;
       text-shadow: none;
       color: #fff;
-      -webkit-transition: color 0.2s ease-in-out;
       transition: color 0.2s ease-in-out;
-      font-size: 80px;
-      font-size: 8rem;
+      font-size: 60px;
+      margin-right: 18px;
       opacity: 1;
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-      font-weight: lighter;
+      font-weight: bold;
+      outline: none;
   }
   .ct-sidenav .inner {
       padding-left: 65px;
       padding-left: 6.5rem;
   }
  
+  /* End of side nav bar */

@@ -1,0 +1,211 @@
+.online_resume {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/resume_online1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* #resume {
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.header_online_resume {
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data_online_resume {    
+    height: 90%;
+    width: 100%;
+    /* background: beige; */
+    text-align: center;
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.edu_and_tech,
+.year_and_edu,
+.skills {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.left_part {
+    float:left; 
+    width: 40%;
+    height: 100%;
+    /* background-color: #ffbf00; */
+    /* margin-left: 150px; */
+}
+
+.right_part {
+    /* margin-right: 10px; */
+    float: right; 
+    width: 60%;
+    height: 100%;
+    /* background-color: #f2f2f2; */
+    padding-right: 210px;
+}
+
+.name {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: start;
+    margin-left: 20px;
+    color: #ffbf00;
+    margin-top: 20px;
+}
+
+.position {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: start;
+    margin-left: 20px;
+    color: #ffbf00;
+    margin-top: -10px;
+}
+
+.edu_part {
+    float:left; 
+    width: 50%;
+    height: 100%;
+}
+
+.tech_part {
+    /* margin-right: 10px; */
+    float: right; 
+    width: 50%;
+    height: 100%;
+}
+
+.year {
+    float:left; 
+    width: 30%;
+    height: 100%;
+    color: white;
+}
+
+.year_text {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.edu_text {
+    margin-top: 6px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.all_skills {
+    margin-top: 6px;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: white;
+    padding-left: 80px;
+}
+
+.edu {
+    /* margin-right: 10px; */
+    float: right; 
+    width: 70%;
+    height: 100%;
+    color: white;
+    text-align: left;
+}
+
+.career_obj,
+.education,
+.skills,
+.experience {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #ffbf00;
+    text-decoration: underline;
+}
+
+.about_me {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: end;
+    margin-right: 90px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #ffbf00;
+    text-decoration: underline;
+}
+
+.about_me_detail {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: end;
+    margin-right: 90px;
+    margin-left: 20px;
+    color: #ffbf00;
+}
+
+.career_des {
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 8px;
+    color: white;
+}
+
+.experience_title {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 16px;
+    color: white;
+}
+
+.experience_comapny,
+.experience_year {
+    font-family: sans-serif;
+    /* font-weight: bold; */
+    font-size: 14px;
+    font-style: italic;
+    text-align: start;
+    margin-left: 20px;
+    /* margin-top: 16px; */
+    color: white;
+}
+
+.exp_details {
+    list-style-type: square;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.myimg{
+    height: 300px;
+    width: 300px;
+    text-align: end;
+}
