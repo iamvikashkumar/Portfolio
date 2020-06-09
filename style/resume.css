@@ -1,5 +1,5 @@
 #resume {
-    background-image: url("../images/resume.gif");
+    background-image: url("../images/resume7.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -15,12 +15,14 @@
 }
 
 .resume_name {
+    color: #000033;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     font-size: 60px;
 }
 
 .resume_line {
+    color: #000033;
     margin-top: 10px;
     font-weight: 500;
     font-family: sans-serif;
@@ -43,9 +45,9 @@ button::after {
 
 button {
   background: none;
-  border: 3px solid #fff;
+  border: 3px solid #000033;
   border-radius: 5px;
-  color: #fff;
+  color: #000033;
   display: block;
   font-weight: bold;
   margin: 10px;

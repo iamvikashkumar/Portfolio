@@ -1,0 +1,36 @@
+#education {
+    /* background-image: url("../images/resume6.jpg"); */
+    background-color: beige;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.education_container {
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    overflow: auto;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 150px 50px 150px;
+}
+
+.school_name {
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: black;
+}
+
+.des {
+
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-weight: bold; */
+    text-align: justify;
+    font-size: 20px;
+    color: black;
+}
